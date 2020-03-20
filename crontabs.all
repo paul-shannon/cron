@@ -1,0 +1,5 @@
+30 * * * * /users/paul/github/cron/scripts/check-tf-srm-shinyApp.py
+35 * * * * /users/paul/github/cron/scripts/trenaBuilds.py
+
+
+

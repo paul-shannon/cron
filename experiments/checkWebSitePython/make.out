@@ -1,0 +1,57 @@
+(cd ~/github/trena  && git pull  && make -f build.makefile install  && make -f build.makefile unitTests) 
+Already up to date.
+(cd ..; R CMD INSTALL --no-test-load trena)
+(cd ~/github/fimoService/server; make -f makefile.unitTests)   # may already be running
+/Users/paul/anaconda3/bin/python /Users/paul/github/fimoService/server/runFimoServer.py 5560 "/Users/paul/meme/bin/fimo" "../pfms/jaspar2018.hocomoco.human.meme"&
+(cd ~/github/trenaSGM  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load trenaSGM)
+(cd ~/github/TrenaProject  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load TrenaProject)
+(cd ~/github/TrenaProjectHG38  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load TrenaProjectHG38)
+(cd ~/github/TrenaProjectHG38.generic  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load TrenaProjectHG38.generic)
+(cd ~/github/TrenaProjectPlacenta  && git pull  && make &&  make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load TrenaProjectPlacenta)
+(cd ~/github/TrenaProjectLymphocyte  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load TrenaProjectLymphocyte)
+(cd ~/github/TrenaProjectScerevisiae  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load TrenaProjectScerevisiae)
+(cd ~/github/TrenaProjectErythropoiesis  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load TrenaProjectErythropoiesis)
+(cd ~/github/TrenaProjectBrainCell  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load TrenaProjectBrainCell)
+(cd ~/github/TrenaProjectLiver  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load TrenaProjectLiver)
+(cd ~/github/TrenaProjectMM10  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL trenaProjectMM10)
+(cd ~/github/TrenaProjectArabidopsisRoot  && git pull  && make  && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load trenaProjectArabidopsisRoot)
+(cd ~/github/TrenaMultiScore && git pull && make && make test)
+Already up to date.
+R -e "devtools::document()"
+(cd ..; R CMD INSTALL --no-test-load TrenaMultiScore)
