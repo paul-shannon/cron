@@ -1,1 +1,2 @@
-30 20 * * * /users/pshannon/github/cron/scripts/trenaBuilds-khaleesi.py
+# 01 * * * * /users/pshannon/github/cron/scripts/shinyApps.py
+0 * * * * /users/pshannon/github/cron/scripts/shinyApps.py
