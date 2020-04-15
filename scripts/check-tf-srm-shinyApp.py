@@ -14,6 +14,7 @@ port = 465  # For SSL
 password = open("/users/paul/crontests.password").read()
 server = smtplib.SMTP_SSL("smtp.gmail.com", port) 
 sender = "crontests.pshannon@gmail.com"
+recipient = "pshannon@systemsbiology.org"
 server.login(sender, password)
 
 scriptName = "hagfish:/users/paul/github/cron/scripts/check-tf-srm-shinyApp.py"
@@ -28,7 +29,7 @@ test script: {scriptName}
 
 """
 
-server.sendmail(sender, sender, mailMessage)
+server.sendmail(sender, [recipient], mailMessage)
 
 
 
