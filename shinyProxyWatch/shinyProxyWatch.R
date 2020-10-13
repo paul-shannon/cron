@@ -8,7 +8,6 @@ age <- lapply(file.names, function(file)
                  as.double(difftime(Sys.time(), file.info(file.path(log.dir, file))$ctime,
                            units="hours")))
 names(age) <- file.names
-password = "m3taHistory!"
 
 new.files <- which(unlist(age) <= 1)
 if(length(new.files) > 0){
