@@ -1,4 +1,7 @@
 library(mailR)
+library(yaml)
+config <-  yaml.load(readLines("~/cron-support.yaml"))
+mailkey <- config$mailkey
 log.dir <- "/etc/shinyproxy-2.2.1/container-logs"
 file.names <- list.files(log.dir, full.names=FALSE)
 length(file.names)
@@ -21,7 +24,7 @@ if(length(new.files) > 0){
              smtp = list(host.name="smtp.gmail.com",
                          port=465,
                          user.name="crontests.pshannon@gmail.com",
-                         passwd=password,
+                         passwd=mailkey,
                          ssl=TRUE),
              authenticate=TRUE,
              send=TRUE)
